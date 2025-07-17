@@ -1,0 +1,72 @@
+#joystickArea {
+    width: 300px;
+    height: 300px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid #dee2e6;
+}
+
+.telemetry-item {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.telemetry-item label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+#emergencyStop {
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+#raceTimer {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    #joystickArea {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Connection Status Colors */
+#connectionStatus.connected {
+    color: #198754;
+}
+
+#connectionStatus.disconnected {
+    color: #dc3545;
+}
+
+/* Battery Level Indicator */
+.battery-low {
+    color: #dc3545;
+}
+
+.battery-medium {
+    color: #ffc107;
+}
+
+.battery-good {
+    color: #198754;
+} 
